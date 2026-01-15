@@ -11,7 +11,7 @@ console.log(reversed);
 const list = [1, 2, "Hi", true];
 let result = [];
 for (let i = list.length - 1; i >= 0; i--) {
-  result.push(list[i]); /* To keep it array not use push onstead of += */
+  result.push(list[i]); /* To keep it array, use push instead of += */
 }
 console.log(result);
 
