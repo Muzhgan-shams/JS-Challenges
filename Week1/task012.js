@@ -31,3 +31,28 @@ function calculator(num1, num2, sign) {
   return result;
 }
 console.log(calculator(3, 0, ""));
+console.log(calculator(3, 0, "/"));
+console.log(calculator(3, 0, "&"));
+
+// Traffic Light System using switch-case
+// Description: Input a color (Red, Yellow, Green) and display an action (Stop, Ready, Go).
+
+function getTrafficAction(color) {
+  if (!color) {
+    return "Please enter one of these colors: red, green, yellow";
+  }
+
+  switch (color.trim().toUpperCase()) {
+    case "RED":
+      return "Stop";
+    case "YELLOW":
+      return "Ready";
+    case "GREEN":
+      return "Go";
+    default:
+      return "Please enter a valid traffic light color";
+  }
+}
+console.log(getTrafficAction("red"));
+console.log(getTrafficAction("re"));
+console.log(getTrafficAction(""));
