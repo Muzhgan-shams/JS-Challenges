@@ -24,7 +24,7 @@ function calculator(num1, num2, sign) {
       result = num2 !== 0 ? num1 / num2 : "Can not divide by zero"; //number divide by zero = infinity
       break;
     default:
-      "Invalid Operator";
+      result = "Invalid Operator";
       break;
   }
 
