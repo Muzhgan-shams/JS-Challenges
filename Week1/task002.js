@@ -16,7 +16,7 @@ for (let i = list.length - 1; i >= 0; i--) {
 console.log(result);
 
 // Reverse a number
-const num = 1000;
+const num = 1000; // to keep it 0001, dont convert it to number
 const numToStr = num.toString();
 let tempReverseStr = "";
 for (let i = numToStr.length - 1; i >= 0; i--) {
