@@ -69,6 +69,7 @@ function getMonthAndDays(monthNum) {
       break;
     case 2:
       days = "28 or 29";
+      break;
     default:
       days = 0;
   }
