@@ -14,3 +14,32 @@ function getAllPrimes(n) {
   }
   return result;
 }
+
+// Single Responsibility.
+// Helper function: Just does one thing (Check if 1 number is prime)
+function isPrime(num) {
+  if (num < 2) return false;
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+// Main function: Collects the primes
+function getAllPrimes(limit) {
+  let primes = [];
+  for (let i = 2; i <= limit; i++) {
+    if (isPrime(i)) primes.push(i);
+  }
+  return primes;
+}
+
+// Optimized
+function isPrimeOptimized(num) {
+  if (num < 2) return false;
+  // Optimization: stop at Math.sqrt(num)
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
