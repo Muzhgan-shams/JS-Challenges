@@ -34,4 +34,3 @@ console.log(getFactorial(-5));
 
 // The factorial of a number is a mathematical operation that multiplies a positive integer by all the smaller positive integers down to 1.
 // Formally, for a non-negative integer n:
-// n!=n\cdot (n-1)\cdot (n-2)\cdot \dots \cdot 2\cdot 1

@@ -43,3 +43,28 @@ function isPrimeOptimized(num) {
   }
   return true;
 }
+
+// Check for palindrome number
+// Description: Check if a number reads the same backward and forward.
+/* 
+function checkPlaindrome(num) {
+  if (num === Number(num.toString().split("").reverse().join(""))) {
+    return "Palindrome";
+  }
+  return "Not palindrome";
+} */
+
+function checkPlaindrome(num) {
+  if (num < 0) return "Not a Palindrome";
+  let originalNum = num;
+  let reversed = 0;
+  while (num > 0) {
+    let lastDigit = num % 10;
+    reversed = reversed * 10 + lastDigit;
+    // slice off the last digit
+    num = Math.floor(num / 10);
+  }
+  return originalNum === reversed ? "Palindrome" : "Not palindrome";
+}
+console.log(checkPlaindrome(121));
+console.log(checkPlaindrome(123));
