@@ -19,6 +19,7 @@ console.log(countOccurrences(10));
 // Description: Determine if a number is divisible only by 1 and itself.
 
 function checkPrime(num) {
+  if (num <= 1) return "Should be greater than 1";
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
       return "Not prime";
@@ -29,6 +30,7 @@ function checkPrime(num) {
 console.log(checkPrime(17));
 console.log(checkPrime(20));
 console.log(checkPrime(2));
+console.log(checkPrime(9));
 // A Prime Number is a "lonely" whole number greater than 1.
 // It has NO divisors except for 1 and itself.
 // If any other number (from 2 up to num-1) can divide it perfectly,
