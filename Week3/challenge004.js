@@ -1,4 +1,4 @@
-// Sort algorithems
+// Sort algorithms
 // Insertion sort
 function insertionSort(arr) {
   for (let i = 1; i < arr.length; i++) {
