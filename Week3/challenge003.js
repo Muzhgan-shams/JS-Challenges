@@ -11,3 +11,7 @@ function getRightKRotated(arr, k) {
   return [...tail, ...head];
 }
 console.log(getRightKRotated([1, 2, 3, 4, 5], 2));
+
+// Rotates an array to the right by K positions.
+// Uses modulo to handle K > array length and ES6 spread/slice
+// to maintain immutability and O(N) time complexity.
