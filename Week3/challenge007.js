@@ -24,3 +24,11 @@ function reverseString(str) {
 }
 
 console.log(reverseString("hello")); // "olleh"
+
+// Recursive Array Sum
+function sumArray(nums, index = 0) {
+  if (index === nums.length) return 0;
+  return nums[index] + sumArray(nums, index + 1);
+}
+
+console.log(sumArray([2, 4, 6])); // 12
