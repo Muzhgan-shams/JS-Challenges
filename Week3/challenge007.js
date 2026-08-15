@@ -16,3 +16,11 @@ function factorialRecursive(n) {
 }
 
 console.log(factorialRecursive(5)); // 120
+
+// Revers a String with recursion
+function reverseString(str) {
+  if (str.length <= 1) return str;
+  return reverseString(str.slice(1)) + str[0];
+}
+
+console.log(reverseString("hello")); // "olleh"
