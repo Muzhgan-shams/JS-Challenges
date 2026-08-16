@@ -41,3 +41,12 @@ function sumArray(nums, index = 0) {
 }
 
 console.log(sumArray([2, 4, 6])); // 12
+
+// Greatest Common Devisor
+function gcd(a, b) {
+  a = Math.abs(a);
+  b = Math.abs(b);
+  return b === 0 ? a : gcd(b, a % b);
+}
+
+console.log(gcd(48, 18)); // 6
