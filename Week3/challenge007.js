@@ -9,6 +9,15 @@ function factorialIterative(n) {
 
 console.log(factorialIterative(5)); // 120
 
+// Recursion Template
+function solve(input) {
+  // Base case: smallest valid input.
+  if (isBaseCase(input)) return baseAnswer;
+
+  // Reduce the problem and combine the result.
+  return combine(input, solve(smallerInput));
+}
+
 // Factorial using resursion
 function factorialRecursive(n) {
   if (n === 0) return 1; // Base case
