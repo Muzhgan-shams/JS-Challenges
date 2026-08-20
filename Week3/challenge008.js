@@ -20,3 +20,16 @@ function printList(head) {
   }
 }
 console.log(printList(list));
+
+function listLength(head) {
+  let count = 0;
+  let current = head;
+
+  while (current !== null) {
+    count++; // Count this node
+    current = current.next; // Move forward
+  }
+
+  return count;
+}
+console.log(listLength(list));
