@@ -32,4 +32,5 @@ function listLength(head) {
 
   return count;
 }
-console.log(listLength(list));
+
+console["log"](listLength(list)); // using bracket notation
