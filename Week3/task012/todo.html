@@ -5,5 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
   </head>
-  <body></body>
+  <body>
+    <main class="todo-app">
+      <h1>My Todo List</h1>
+      <form id="todoForm">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="Add a todo..."
+          autocomplete="off"
+        />
+        <button type="submit">Add</button>
+      </form>
+      <p id="errorMessage" class="error-message"></p>
+    </main>
+  </body>
 </html>
