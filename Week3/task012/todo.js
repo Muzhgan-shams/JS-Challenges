@@ -7,3 +7,5 @@ const errorMessage = document.getElementById("errorMessage");
 const todoCount = document.getElementById("todoCount");
 const todoList = document.getElementById("todoList");
 const filterButtons = document.querySelectorAll(".filter-button");
+
+const id = Date.now();
