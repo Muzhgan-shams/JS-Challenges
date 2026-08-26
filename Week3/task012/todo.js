@@ -33,3 +33,8 @@ todoForm.addEventListener("submit", function (event) {
   renderTodos();
   todoInput.focus();
 });
+
+function showError(message) {
+  errorMessage.textContent = message;
+  errorMessage.style.display = "block";
+}
