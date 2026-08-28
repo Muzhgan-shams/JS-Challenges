@@ -8,8 +8,6 @@ const todoCount = document.getElementById("todoCount");
 const todoList = document.getElementById("todoList");
 const filterButtons = document.querySelectorAll(".filter-button");
 
-const id = Date.now();
-
 todoForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -21,7 +19,7 @@ todoForm.addEventListener("submit", function (event) {
   }
 
   const newTodo = {
-    id: id,
+    id: Date.now(),
     text: todoText,
     completed: false,
   };
