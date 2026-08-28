@@ -126,3 +126,11 @@ function toggleTodo(todoId) {
 
   renderTodos();
 }
+
+function deleteTodo(todoId) {
+  todos = todos.filter(function (todo) {
+    return todo.id !== todoId;
+  });
+
+  renderTodos();
+}
