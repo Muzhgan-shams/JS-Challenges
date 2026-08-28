@@ -100,4 +100,16 @@ function renderTodos() {
     const todoElement = createTodoElement(todo);
     todoList.appendChild(todoElement);
   });
+  updateCount();
+}
+
+function updateCount() {
+  const activeTodos = todos.filter(function (todo) {
+    return todo.completed === false;
+  });
+
+  const activeCount = activeTodos.length;
+  const itemWord = activeCount === 1 ? "item" : "items";
+
+  todoCount.textContent = `${activeCount} ${itemWord} left`;
 }
