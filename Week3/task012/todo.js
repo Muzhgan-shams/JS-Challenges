@@ -134,3 +134,28 @@ function deleteTodo(todoId) {
 
   renderTodos();
 }
+
+todoList.addEventListener("click", function (event) {
+  const clickedButton = event.target.closest("button");
+
+  if (!clickedButton) {
+    return;
+  }
+
+  const todoElement = clickedButton.closest(".todo-item");
+
+  if (!todoElement) {
+    return;
+  }
+
+  const todoId = Number(todoElement.dataset.id);
+  const action = clickedButton.dataset.action;
+
+  if (action === "complete") {
+    toggleTodo(todoId);
+  }
+
+  if (action === "delete") {
+    deleteTodo(todoId);
+  }
+});
