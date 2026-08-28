@@ -90,3 +90,14 @@ function createTodoElement(todo) {
 
   return listItem;
 }
+
+function renderTodos() {
+  todoList.innerHTML = "";
+
+  const visibleTodos = getVisibleTodos();
+
+  visibleTodos.forEach(function (todo) {
+    const todoElement = createTodoElement(todo);
+    todoList.appendChild(todoElement);
+  });
+}
