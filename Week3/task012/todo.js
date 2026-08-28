@@ -43,3 +43,19 @@ function clearError() {
   errorMessage.textContent = "";
   errorMessage.style.display = "none";
 }
+
+function getVisibleTodos() {
+  if (currentFilter === "active") {
+    return todos.filter(function (todo) {
+      return todo.completed === false;
+    });
+  }
+
+  if (currentFilter === "completed") {
+    return todos.filter(function (todo) {
+      return todo.completed === true;
+    });
+  }
+
+  return todos;
+}
