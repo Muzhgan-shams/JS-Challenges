@@ -113,3 +113,18 @@ function updateCount() {
 
   todoCount.textContent = `${activeCount} ${itemWord} left`;
 }
+
+function toggleTodo(todoId) {
+  todos = todos.map(function (todo) {
+    if (todo.id === todoId) {
+      return {
+        ...todo,
+        completed: !todo.completed,
+      };
+    }
+
+    return todo;
+  });
+
+  renderTodos();
+}
