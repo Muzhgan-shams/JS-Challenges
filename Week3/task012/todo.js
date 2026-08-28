@@ -21,7 +21,7 @@ todoForm.addEventListener("submit", function (event) {
   }
 
   const newTodo = {
-    id: Date.now(),
+    id: id,
     text: todoText,
     completed: false,
   };
@@ -37,4 +37,9 @@ todoForm.addEventListener("submit", function (event) {
 function showError(message) {
   errorMessage.textContent = message;
   errorMessage.style.display = "block";
+}
+
+function clearError() {
+  errorMessage.textContent = "";
+  errorMessage.style.display = "none";
 }
