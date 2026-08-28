@@ -159,3 +159,7 @@ todoList.addEventListener("click", function (event) {
     deleteTodo(todoId);
   }
 });
+
+function saveTodos() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
