@@ -123,7 +123,7 @@ function toggleTodo(todoId) {
 
     return todo;
   });
-
+  saveTodos();
   renderTodos();
 }
 
