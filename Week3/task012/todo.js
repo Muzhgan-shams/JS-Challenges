@@ -160,6 +160,19 @@ todoList.addEventListener("click", function (event) {
   }
 });
 
+filterButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    currentFilter = button.dataset.filter;
+
+    filterButtons.forEach(function (filterButton) {
+      filterButton.classList.remove("active");
+    });
+
+    button.classList.add("active");
+    renderTodos();
+  });
+});
+
 function saveTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
