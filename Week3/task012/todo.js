@@ -163,3 +163,11 @@ todoList.addEventListener("click", function (event) {
 function saveTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
+
+function loadTodos() {
+  const savedTodos = localStorage.getItem("todos");
+
+  if (savedTodos) {
+    todos = JSON.parse(savedTodos);
+  }
+}
