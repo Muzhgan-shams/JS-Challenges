@@ -171,3 +171,6 @@ function loadTodos() {
     todos = JSON.parse(savedTodos);
   }
 }
+
+loadTodos();
+renderTodos();
