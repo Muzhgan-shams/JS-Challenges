@@ -131,7 +131,7 @@ function deleteTodo(todoId) {
   todos = todos.filter(function (todo) {
     return todo.id !== todoId;
   });
-
+  saveTodos();
   renderTodos();
 }
 
