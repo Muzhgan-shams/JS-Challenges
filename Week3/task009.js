@@ -14,3 +14,7 @@ console.log(getProductInfo(product));
 const numbers = [10, 20, 30];
 const [first, second, third] = numbers;
 console.log(first, second, third); // 10 20 30
+
+//Skip Elements
+const [a, , c] = numbers;
+console.log(a, c); // 10 30
