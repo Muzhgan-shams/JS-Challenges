@@ -18,3 +18,8 @@ console.log(first, second, third); // 10 20 30
 //Skip Elements
 const [a, , c] = numbers;
 console.log(a, c); // 10 30
+
+// Default values
+const person = { name: "Sara" };
+const { name, age = 25 } = person;
+console.log(name, age); // Sara 25
