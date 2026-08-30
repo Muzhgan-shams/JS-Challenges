@@ -9,3 +9,8 @@ function getProductInfo({ name, price, inStock }) {
   return `${name} costs $${price} - ${inStock ? "In Stock" : "Not In Stock"}`;
 }
 console.log(getProductInfo(product));
+
+// Array Destructuring
+const numbers = [10, 20, 30];
+const [first, second, third] = numbers;
+console.log(first, second, third); // 10 20 30
