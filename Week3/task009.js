@@ -23,3 +23,8 @@ console.log(a, c); // 10 30
 const person = { name: "Sara" };
 const { name, age = 25 } = person;
 console.log(name, age); // Sara 25
+
+//Renaming Variables
+const user = { id: 1, username: "muzhgan" };
+const { username: fName } = user;
+console.log(fName); // muzhgan
