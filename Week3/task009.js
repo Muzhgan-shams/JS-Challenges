@@ -28,3 +28,14 @@ console.log(name, age); // Sara 25
 const user = { id: 1, username: "muzhgan" };
 const { username: fName } = user;
 console.log(fName); // muzhgan
+
+// Nested Destructuring
+const student = {
+  name: "Ali",
+  scores: { math: 90, english: 85 },
+};
+
+const {
+  scores: { math, english },
+} = student;
+console.log(math, english); // 90 85
