@@ -55,3 +55,11 @@ let x = 1,
   y = 2;
 [x, y] = [y, x];
 console.log(x, y); // 2 1
+
+//Function return Values
+function getCoordinates() {
+  return [34.5, 69.2];
+}
+
+const [lat, lon] = getCoordinates();
+console.log(lat, lon); // 34.5 69.2
