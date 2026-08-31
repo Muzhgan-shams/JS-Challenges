@@ -39,3 +39,13 @@ const {
   scores: { math, english },
 } = student;
 console.log(math, english); // 90 85
+
+// Destructuring in Loops
+const people = [
+  { name: "Muzhgan", city: "Kabul" },
+  { name: "Sahar", city: "Herat" },
+];
+
+for (const { name, city } of people) {
+  console.log(`${name} lives in ${city}`);
+}
