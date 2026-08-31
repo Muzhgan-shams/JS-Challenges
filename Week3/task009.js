@@ -63,3 +63,12 @@ function getCoordinates() {
 
 const [lat, lon] = getCoordinates();
 console.log(lat, lon); // 34.5 69.2
+
+// Combining with rest/spread
+const [first1, ...rest] = [1, 2, 3, 4];
+console.log(first1); // 1
+console.log(rest); // [2, 3, 4]
+
+const { b, ...others } = { a: 1, b: 2, c: 3 };
+console.log(b); // 1
+console.log(others); // { b: 2, c: 3 }
