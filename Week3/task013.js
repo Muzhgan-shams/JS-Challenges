@@ -16,3 +16,6 @@ class Student {
 
 const student1 = new Student("Muzhgan", 2);
 student1.displayInfo();
+
+// Objects(Instances)
+// Objects are created from classes and hold unique values.
