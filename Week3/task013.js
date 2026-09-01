@@ -32,3 +32,5 @@ class Dog {
 
 const myDog = new Dog("The dog", "Husky");
 myDog.bark();
+
+// Encapsulation - wrap data and methods, restricting direct access
