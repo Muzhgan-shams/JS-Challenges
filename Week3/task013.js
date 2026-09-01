@@ -19,3 +19,16 @@ student1.displayInfo();
 
 // Objects(Instances)
 // Objects are created from classes and hold unique values.
+class Dog {
+  constructor(name, breed) {
+    this.name = name;
+    this.breed = breed;
+  }
+
+  bark() {
+    console.log(`${this.name} says woof!`);
+  }
+}
+
+const myDog = new Dog("The dog", "Husky");
+myDog.bark();
