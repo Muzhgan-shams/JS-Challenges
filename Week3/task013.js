@@ -34,3 +34,18 @@ const myDog = new Dog("The dog", "Husky");
 myDog.bark();
 
 // Encapsulation - wrap data and methods, restricting direct access
+class Account {
+  #balance = 0; // private field
+
+  deposit(amount) {
+    this.#balance += amount;
+  }
+
+  getBalance() {
+    return this.#balance;
+  }
+}
+
+const acc = new Account();
+acc.deposit(100);
+console.log(acc.getBalance());
