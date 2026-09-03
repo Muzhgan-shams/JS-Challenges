@@ -52,3 +52,17 @@ acc.deposit(100);
 console.log(acc.getBalance());
 
 // Inheritance - Allows one class to extend another
+class Animal {
+  speak() {
+    console.log("Some sound");
+  }
+}
+
+class Cat extends Animal {
+  speak() {
+    console.log("Meow!");
+  }
+}
+
+const kitty = new Cat();
+kitty.speak(); // Meow!
