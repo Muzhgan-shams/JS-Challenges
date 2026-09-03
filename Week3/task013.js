@@ -68,3 +68,17 @@ const kitty = new Cat();
 kitty.speak(); // Meow!
 
 // Polymorphism - Different classes can define the same method differently
+
+class Bird {
+  sound() {
+    console.log("Chirp");
+  }
+}
+class Dog2 {
+  sound() {
+    console.log("Woof");
+  }
+}
+
+const animals = [new Bird(), new Dog2()];
+animals.forEach((a) => a.sound()); // Chirp, Woof
