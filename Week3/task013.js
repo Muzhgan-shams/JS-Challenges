@@ -34,6 +34,7 @@ const myDog = new Dog("The dog", "Husky");
 myDog.bark();
 
 // Encapsulation - wrap data and methods, restricting direct access
+// Here, #balamce is hidden from outside access.
 class Account {
   #balance = 0; // private field
 
