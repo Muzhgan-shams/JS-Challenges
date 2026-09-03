@@ -50,3 +50,5 @@ class Account {
 const acc = new Account();
 acc.deposit(100);
 console.log(acc.getBalance());
+
+// Inheritance - Allows one class to extend another
