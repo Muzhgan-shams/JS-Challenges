@@ -82,3 +82,5 @@ class Dog2 {
 
 const animals = [new Bird(), new Dog2()];
 animals.forEach((a) => a.sound()); // Chirp, Woof
+
+// Abstraction - Hide complexity and expose only essentials.
