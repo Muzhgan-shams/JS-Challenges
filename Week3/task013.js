@@ -84,3 +84,15 @@ const animals = [new Bird(), new Dog2()];
 animals.forEach((a) => a.sound()); // Chirp, Woof
 
 // Abstraction - Hide complexity and expose only essentials.
+
+class CoffeeMachine {
+  #water = 100;
+
+  makeEspresso() {
+    this.#water -= 50;
+    console.log("Espresso ready!");
+  }
+}
+
+const cm = new CoffeeMachine();
+cm.makeEspresso(); // Espresso ready!
