@@ -85,6 +85,8 @@ animals.forEach((a) => a.sound()); // Chirp, Woof
 
 // Abstraction - Hide complexity and expose only essentials.
 
+// User doesn’t need to know how water is managed internally.
+
 class CoffeeMachine {
   #water = 100;
 
