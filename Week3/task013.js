@@ -100,3 +100,13 @@ const cm = new CoffeeMachine();
 cm.makeEspresso(); // Espresso ready!
 
 // JavaScript is Prototype‑Based (Classes Are Syntax Sugar)
+function Animal1(name) {
+  this.name = name;
+}
+
+Animal1.prototype.speak = function () {
+  console.log(`${this.name} makes a sound`);
+};
+
+const dog = new Animal1("Rayne");
+dog.speak(); // Rayne makes a sound
