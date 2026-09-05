@@ -113,6 +113,7 @@ dog.speak(); // Rayne makes a sound
 
 // Static methods and properties belong to the class itself, not the instances.
 
+// Instances cannot access static methods.
 class MathUtils {
   static add(a, b) {
     return a + b;
