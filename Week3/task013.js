@@ -110,3 +110,5 @@ Animal1.prototype.speak = function () {
 
 const dog = new Animal1("Rayne");
 dog.speak(); // Rayne makes a sound
+
+// Static methods and properties belong to the class itself, not the instances.
