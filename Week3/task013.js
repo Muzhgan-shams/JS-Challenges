@@ -98,3 +98,5 @@ class CoffeeMachine {
 
 const cm = new CoffeeMachine();
 cm.makeEspresso(); // Espresso ready!
+
+// JavaScript is Prototype‑Based (Classes Are Syntax Sugar)
