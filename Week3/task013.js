@@ -112,3 +112,11 @@ const dog = new Animal1("Rayne");
 dog.speak(); // Rayne makes a sound
 
 // Static methods and properties belong to the class itself, not the instances.
+
+class MathUtils {
+  static add(a, b) {
+    return a + b;
+  }
+}
+
+console.log(MathUtils.add(2, 3)); // 5
