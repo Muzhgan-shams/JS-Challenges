@@ -124,3 +124,15 @@ console.log(MathUtils.add(2, 3)); // 5
 
 // Private Fields & Methods
 // Anything with # is not accessible outside the class.
+
+class Bank {
+  #balance = 0;
+
+  deposit(amount) {
+    this.#balance += amount;
+  }
+
+  #log() {
+    console.log("Balance updated");
+  }
+}
