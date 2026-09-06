@@ -136,3 +136,6 @@ class Bank {
     console.log("Balance updated");
   }
 }
+
+// Getters and Setters (Encapsulation)
+// Controls how properties are read and written
