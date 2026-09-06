@@ -139,3 +139,21 @@ class Bank {
 
 // Getters and Setters (Encapsulation)
 // Controls how properties are read and written
+
+class User {
+  constructor(name) {
+    this._name = name;
+  }
+
+  get name() {
+    return this._name.toUpperCase();
+  }
+
+  set name(value) {
+    if (value.length < 3) throw new Error("Too short");
+    this._name = value;
+  }
+}
+
+const u = new User("Muzhgan");
+console.log(u.name); // MUZHGAN
