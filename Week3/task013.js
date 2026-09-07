@@ -157,3 +157,21 @@ class User {
 
 const u = new User("Muzhgan");
 console.log(u.name); // MUZHGAN
+
+// Method Overriding (Polymorphism)
+class Shape {
+  area() {
+    return 0;
+  }
+}
+
+class Circle extends Shape {
+  constructor(r) {
+    super();
+    this.r = r;
+  }
+
+  area() {
+    return Math.PI * this.r * this.r;
+  }
+}
