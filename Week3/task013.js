@@ -214,3 +214,8 @@ Object.assign(Person.prototype, sayHi);
 
 const l = new Person();
 l.hi();
+
+// Class Fields (Public)
+class Car {
+  model = "Toyota"; // public field
+}
