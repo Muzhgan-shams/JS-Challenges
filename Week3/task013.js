@@ -200,3 +200,17 @@ function createPerson(name) {
 const p = createPerson("Ali");
 p.walk();
 p.eat();
+
+//Mixins (Multiple Inheritance Alternative)
+const sayHi = {
+  hi() {
+    console.log("Hi");
+  },
+};
+
+class Person {}
+
+Object.assign(Person.prototype, sayHi);
+
+const l = new Person();
+l.hi();
