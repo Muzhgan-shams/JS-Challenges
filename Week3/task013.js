@@ -175,3 +175,28 @@ class Circle extends Shape {
     return Math.PI * this.r * this.r;
   }
 }
+
+// Composition (Often Better Than Inheritance)
+const canWalk = {
+  walk() {
+    console.log("Walking");
+  },
+};
+
+const canEat = {
+  eat() {
+    console.log("Eating");
+  },
+};
+
+function createPerson(name) {
+  return {
+    name,
+    ...canWalk,
+    ...canEat,
+  };
+}
+
+const p = createPerson("Ali");
+p.walk();
+p.eat();
