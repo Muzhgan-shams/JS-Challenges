@@ -232,3 +232,10 @@ function Counter() {
 
 const c = new Counter();
 c.increment();
+
+// OOP + Modules
+export class User1 {
+  constructor(name) {
+    this.name = name;
+  }
+}
