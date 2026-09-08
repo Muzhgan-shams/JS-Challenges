@@ -239,3 +239,11 @@ export class User1 {
     this.name = name;
   }
 }
+
+// OOP + Async
+class API {
+  async getData() {
+    const res = await fetch("https://api.example.com");
+    return res.json();
+  }
+}
