@@ -219,3 +219,16 @@ l.hi();
 class Car {
   model = "Toyota"; // public field
 }
+
+// OOP + Closure
+function Counter() {
+  let count = 0;
+
+  this.increment = function () {
+    count++;
+    console.log(count);
+  };
+}
+
+const c = new Counter();
+c.increment();
