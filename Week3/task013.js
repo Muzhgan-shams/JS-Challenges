@@ -247,3 +247,5 @@ class API {
     return res.json();
   }
 }
+
+// JavaScript doesn’t support multiple inheritance, but we can use mixins or composition to combine behaviors:
