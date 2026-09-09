@@ -249,3 +249,21 @@ class API {
 }
 
 // JavaScript doesn’t support multiple inheritance, but we can use mixins or composition to combine behaviors:
+
+const canFly = {
+  fly() {
+    console.log("Flying");
+  },
+};
+const canSwim = {
+  swim() {
+    console.log("Swimming");
+  },
+};
+
+class Duck {}
+Object.assign(Duck.prototype, canFly, canSwim);
+
+const d = new Duck();
+d.fly();
+d.swim();
