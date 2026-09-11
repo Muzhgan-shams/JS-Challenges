@@ -267,3 +267,6 @@ Object.assign(Duck.prototype, canFly, canSwim);
 const d = new Duck();
 d.fly();
 d.swim();
+
+// Encapsulation with Closures
+// Before private fields (#), use closures to hide data:
