@@ -270,3 +270,12 @@ d.swim();
 
 // Encapsulation with Closures
 // Before private fields (#), use closures to hide data:
+function Counter1() {
+  let count = 0;
+  this.increment = () => ++count;
+  this.getCount = () => count;
+}
+
+const w = new Counter1();
+console.log(w.increment());
+console.log(w.getCount());
