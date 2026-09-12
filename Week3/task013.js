@@ -287,3 +287,9 @@ export class User2 {
     this.name = name;
   }
 }
+
+// and use the same class in another js file as below
+
+// main.js
+// import { User2 } from "./user.js";
+// const u = new User2("Muzhgan");
