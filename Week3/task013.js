@@ -281,3 +281,9 @@ console.log(w.increment());
 console.log(w.getCount());
 
 // Classes are also used with modules for a clean architechture
+// user.js
+export class User2 {
+  constructor(name) {
+    this.name = name;
+  }
+}
