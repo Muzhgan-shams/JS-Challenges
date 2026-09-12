@@ -279,3 +279,5 @@ function Counter1() {
 const w = new Counter1();
 console.log(w.increment());
 console.log(w.getCount());
+
+// Classes are also used with modules for a clean architechture
