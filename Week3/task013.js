@@ -293,3 +293,11 @@ export class User2 {
 // main.js
 // import { User2 } from "./user.js";
 // const u = new User2("Muzhgan");
+
+// Async OOP
+class API {
+  async fetchData() {
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+    return res.json();
+  }
+}
