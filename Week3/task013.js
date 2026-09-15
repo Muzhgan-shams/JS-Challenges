@@ -295,9 +295,16 @@ export class User2 {
 // const u = new User2("Muzhgan");
 
 // Async OOP
-class API {
+class API1 {
   async fetchData() {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
     return res.json();
   }
 }
+
+function makeItSpeak(entity) {
+  entity.speak();
+}
+
+const cat = { speak: () => console.log("Meow") };
+makeItSpeak(cat);
