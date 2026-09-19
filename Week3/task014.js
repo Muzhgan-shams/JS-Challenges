@@ -12,3 +12,6 @@ console.log(counter.next());
 console.log(counter.next());
 console.log(counter.next());
 console.log(counter.next());
+
+//  Lazy Evaluation
+// Generate values only when needed (useful for large or infinite sequences):
