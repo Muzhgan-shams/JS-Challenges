@@ -15,3 +15,12 @@ console.log(counter.next());
 
 //  Lazy Evaluation
 // Generate values only when needed (useful for large or infinite sequences):
+
+function* infiniteNumbers() {
+  let n = 0;
+  while (true) yield n++;
+}
+
+const nums = infiniteNumbers();
+console.log(nums.next().value);
+console.log(nums.next().value);
