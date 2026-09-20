@@ -24,3 +24,6 @@ function* infiniteNumbers() {
 const nums = infiniteNumbers();
 console.log(nums.next().value);
 console.log(nums.next().value);
+
+// Custom Iteration
+// Generators let you define how objects are iterated:
