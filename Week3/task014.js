@@ -39,3 +39,6 @@ const obj = {
 for (const val of obj) {
   console.log(val);
 }
+
+// Two-Way Communication
+// You can pass values back into a generator
