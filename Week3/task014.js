@@ -42,3 +42,14 @@ for (const val of obj) {
 
 // Two-Way Communication
 // You can pass values back into a generator
+
+function* echo() {
+  const first = yield "Send me a value";
+  const second = yield `You sent: ${first}`;
+  return `Final: ${first}, ${second}`;
+}
+
+const iter = echo();
+console.log(iter.next().value);
+console.log(iter.next("Hello").value);
+console.log(iter.next("World").value);
