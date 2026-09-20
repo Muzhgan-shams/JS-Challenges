@@ -27,3 +27,15 @@ console.log(nums.next().value);
 
 // Custom Iteration
 // Generators let you define how objects are iterated:
+
+const obj = {
+  *[Symbol.iterator]() {
+    yield "A";
+    yield "B";
+    yield "C";
+  },
+};
+
+for (const val of obj) {
+  console.log(val);
+}
