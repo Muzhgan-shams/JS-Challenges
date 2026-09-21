@@ -70,3 +70,22 @@ function createUser(name, age) {
 
 const user1 = createUser("Muzhgan", 5);
 user1.greet();
+
+// Private Data with Closure
+
+function createCounter() {
+  let count = 0;
+
+  return {
+    increment() {
+      count++;
+    },
+    getCount() {
+      return count;
+    },
+  };
+}
+
+const counter1 = createCounter();
+counter.increment();
+console.log(counter.getCount());
