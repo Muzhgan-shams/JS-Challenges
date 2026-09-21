@@ -53,3 +53,7 @@ const iter = echo();
 console.log(iter.next().value);
 console.log(iter.next("Hello").value);
 console.log(iter.next("World").value);
+
+// Factory Functions
+// Factory functions in JavaScript are simply functions that create and return objects
+// without using the class keyword or the new operator. They’re a flexible alternative to classes and constructors
