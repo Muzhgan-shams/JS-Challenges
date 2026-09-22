@@ -87,8 +87,14 @@ function createCounter() {
 }
 
 const counter1 = createCounter();
-counter.increment();
-console.log(counter.getCount());
+counter1.increment();
+console.log(counter1.getCount());
 
 // Multiple Instnces
 // Each call creates a new independent counter
+const c1 = createCounter();
+const c2 = createCounter();
+
+c1.increment();
+console.log(c1.getCount());
+console.log(c2.getCount());
