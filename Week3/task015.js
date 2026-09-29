@@ -17,3 +17,10 @@ function heavyTask() {
 
 heavyTask();
 console.log("End");
+
+// Asynchronous - runs without blocking the main thread
+console.log("Start");
+
+setTimeout(() => console.log("Timeout done"), 0);
+
+console.log("End");
