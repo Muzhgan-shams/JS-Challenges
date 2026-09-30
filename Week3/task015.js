@@ -31,3 +31,10 @@ console.log("Start");
 setTimeout(() => console.log("Timeout done"), 0);
 
 console.log("End");
+
+// Promises (Microtask)
+console.log("Start");
+
+Promise.resolve().then(() => console.log("Promise resolved"));
+
+console.log("End");
