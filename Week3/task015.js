@@ -24,3 +24,10 @@ console.log("Start");
 setTimeout(() => console.log("Timeout done"), 0);
 
 console.log("End");
+
+// setTimeout (Macrotask)
+console.log("Start");
+
+setTimeout(() => console.log("Timeout done"), 0);
+
+console.log("End");
