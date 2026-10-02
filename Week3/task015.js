@@ -50,3 +50,18 @@ async function fetchData() {
 console.log("Start");
 fetchData();
 console.log("End");
+
+//Async Iterators
+async function* asyncNumbers() {
+  let i = 0;
+  while (i < 3) {
+    await new Promise((r) => setTimeout(r, 500));
+    yield i++;
+  }
+}
+
+(async () => {
+  for await (const num of asyncNumbers()) {
+    console.log(num);
+  }
+})();
