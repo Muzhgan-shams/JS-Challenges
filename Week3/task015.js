@@ -38,3 +38,15 @@ console.log("Start");
 Promise.resolve().then(() => console.log("Promise resolved"));
 
 console.log("End");
+
+// Async/Await
+async function fetchData() {
+  console.log("Fetching...");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  const data = await res.json();
+  console.log("Data:", data.title);
+}
+
+console.log("Start");
+fetchData();
+console.log("End");
