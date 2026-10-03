@@ -65,3 +65,15 @@ async function* asyncNumbers() {
     console.log(num);
   }
 })();
+
+// Parallel Async with Promise.all
+async function task(id, delay) {
+  return new Promise((r) => setTimeout(() => r(`Task ${id} done`), delay));
+}
+
+async function run() {
+  const results = await Promise.all([task(1, 1000), task(2, 500)]);
+  console.log(results);
+}
+
+run();
