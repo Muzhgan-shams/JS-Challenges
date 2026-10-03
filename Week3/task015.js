@@ -77,3 +77,9 @@ async function run() {
 }
 
 run();
+
+// Race Conditions (Promise.race)
+Promise.race([
+  new Promise((r) => setTimeout(() => r("Fast"), 500)),
+  new Promise((r) => setTimeout(() => r("Slow"), 1000)),
+]).then(console.log);
