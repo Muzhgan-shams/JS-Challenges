@@ -83,3 +83,7 @@ Promise.race([
   new Promise((r) => setTimeout(() => r("Fast"), 500)),
   new Promise((r) => setTimeout(() => r("Slow"), 1000)),
 ]).then(console.log);
+
+// Sync = predictable, but blocks.
+
+// Async = non‑blocking, but requires understanding of event loop, microtasks, and promises.
